@@ -1,0 +1,53 @@
+
+  {% extends 'base.html' %}
+
+
+  {% block content %}
+
+  <div class="container">
+
+    <h1 style=text-align:center;>{{product_object.category}}</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ product_object.image.url }}" alt="img" style="width:300px;height:350px;">
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                  <h3>{{ product_object.name }}</h3> 
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="color:red;"> {{ product_object.description }}</p>
+
+                </div>
+
+            </div>
+          
+            <div class="row">
+                <div class="col-md-12">
+                    <h2><span class="badge badge-danger">&#8377;{{ product_object.price }}</span></h2>
+                   
+                </div>
+                
+                <a class="" href="/">Countinue Shopping 	&#128717;
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}
